@@ -1,0 +1,39 @@
+{
+  "name": "hlookup",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Resolve a hostname - Inspired from nslookup but writing by Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "build-win": "pkg index.js -t node18-win-x64 -o ./bin/win-hlookup",
+    "build-linux": "pkg index.js -t node18-linux-x64 -o ./bin/linux-hlookup",
+    "build-mac": "pkg index.js -t node18-macos-x64 -o ./bin/mac-hlookup",
+    "build-exe": "npm run build-win && npm run build-linux && npm run build-mac"
+  },
+  "keywords": [
+    "nslookup", "dnslookup",
+    "hlookup", "nodejs lookup"
+  ],
+  "author": "Toni",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-text-generator": "^1.0.5",
+    "chalk": "^4.1.2",
+    "table": "^6.8.1"
+  },
+  "homepage": "https://github.com/isekaimaou1109/hlookup#readme",
+  "bugs": {
+    "url": "https://github.com/isekaimaou1109/hlookup/issues",
+    "email": "nhat11092000@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isekaimaou1109/hlookup.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "directories": {
+    "bin": "./bin"
+  }
+}
